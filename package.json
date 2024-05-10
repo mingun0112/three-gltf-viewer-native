@@ -23,7 +23,8 @@
 		"clean": "rimraf dist/**",
 		"test": "node test/gen_test.js",
 		"deploy": "npm run build && vercel --local-config vercel.json --prod",
-		"postversion": "git push && git push --tags"
+		"postversion": "git push && git push --tags",
+		"tauri": "tauri"
 	},
 	"dependencies": {
 		"dat.gui": "^0.7.9",
@@ -34,6 +35,7 @@
 		"vhtml": "^2.2.0"
 	},
 	"devDependencies": {
+		"@tauri-apps/cli": "^1.5.13",
 		"prettier": "^3.2.5",
 		"rimraf": "^5.0.5",
 		"vite": "^5.1.6"
